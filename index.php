@@ -151,11 +151,107 @@
 			<span class="glyphicon glyphicon-chevron-right"></span>
 		</a>
 	</div>  <!-- end of carousel -->
-	<br> <br> <br>
+	
 </section>
-
 </div>
+<!-- features -->
 
+<div class="container">
+<section>
+	<div class="page-header" id="features">
+		<h2>Features.<small> Some of the coolest Features of this app</small></h2>
+	</div>
+	<div class="row">
+		<div class="col-lg-8">
+			<h3>This is the heading</h3>
+			<P> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor </P>
+		</div>
+		<div class="col-lg-4">
+			<img src="images/imac.jpg" class="img-responsive" alt="imac">
+			
+		</div>
+		<div class="row">
+		<div class="col-lg-8">
+			<h3>This is the heading</h3>
+			<P> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor </P>
+		</div>
+		<div class="col-lg-4">
+			<img src="images/smartphone.jpg" class="img-responsive" alt="smartphone">
+		</div>
+		<div class="row">
+		<div class="col-lg-8">
+			<h3>This is the heading</h3>
+			<P> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor </P>
+		</div>
+		<div class="col-lg-4">
+			<img src="images/user.jpg" class="img-responsive" alt="user">
+			<br>
+		</div>
+
+		<div class="row">
+			<div class="col-lg-4">
+				<div class="panel panel-default">
+					<div class="panel-body text-center">
+						<span class="glyphicon glyphicon-refresh my-class"></span>
+						<h4>This is heading</h4>
+						<p>
+						Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor</p>
+					</div>
+				</div>
+			</div>
+			<div class="col-lg-4">
+				<div class="panel panel-default">
+					<div class="panel-body text-center">
+						<span class="glyphicon glyphicon-camera my-class"></span>
+						<h4>This is heading</h4>
+						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor</p>
+					</div>
+				</div>
+			</div>
+			<div class="col-lg-4">
+				<div class="panel panel-default">
+					<div class="panel-body text-center">
+						<span class="glyphicon glyphicon-cloud my-class"></span>
+						<h4>This is heading</h4>
+						<p>
+						Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+</div>
+<!-- f.a.q -->
+<div class="container">
+<section>
+<div class="page-header" id="faq">
+		<h2>F.A.Q <small>  Questions and Answers </small></h2>
+	</div>
+	<div class="panel-group" id="accordion">
+		<div class="pannel panel-default">
+			<div class="panel-heading">
+				<div class="panel-title">
+				<a href="#collapse-1" data-toggle="collapse" data-parent="#accordion">Question one?</a>	
+			</div>
+				<!--  End panel title -->
+		
+		<div id="collapse-1" class="pannel-collapse collapse">
+			<div class="panel-body">
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor</p>
+			</div>
+			</div>
+		</div>
+
+		</div>
+
+
+	</div>
+
+
+
+</section>
+</div>
 
 
 
@@ -163,7 +259,7 @@
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
 <!-- Latest compiled and minified JavaScript -->
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
-<!--my script-->
+<!-- my script-->
 <script type="text/javascript" src="script/modal_form.js"></script>
 <!-- font awesome -->
 <script src=" https://use.fontawesome.com/0e7f49fa15.js " ></script>
