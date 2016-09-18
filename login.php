@@ -5,8 +5,6 @@
 
 <!-- The Modal -->
 <div id="id01" class="modal">
-  
-
   <!-- Modal Content -->
   <form class="modal-content animate" action="server.php" method="POST">
     
@@ -28,5 +26,4 @@
     </div>
   </form>
 </div>
-
 <?php require "server.php";  ?>

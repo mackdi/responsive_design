@@ -9,13 +9,9 @@
   	<link rel="stylesheet" type="text/css" href="css/modal_box.css">
 	<!-- Latest compiled and minified CSS -->
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
-
-	<!-- Optional theme -->
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
-	
-
 </head>
-<body>
+<body data-spy="scroll" data-target="#my-navbar">
+	<!-- Navbar -->
 	<nav class="navbar navbar-inverse navbar-fixed-top" id="my-navbar">
 		<div class="container">
 			<div class="navbar-header">
@@ -26,8 +22,9 @@
 				<span class="icon-bar"></span>
 				</button>
 				<a href="#" class="navbar-brand"> HOME </a>
+
 			</div> <!-- navbar header -->
-			<div class="colapse navbar-colapse" id="navbar-collapse">
+			<div class="collapse navbar-collapse" id="navbar-collapse">
 				
 				<!-- include modal login -->
 				<?php include "login.php" ?>
@@ -36,11 +33,11 @@
 				<button class="btn navbar-btn navbar-right" onclick="document.getElementById('id01').style.display='block'">Login <i class="fa fa-sign-in" aria-hidden="true"></i></button>
 				
 				<ul class="nav navbar-nav">
-					<li><a href="#">Feedback</a></li>
-					<li><a href="#">Gallery</a></li>
-					<li><a href="#">Featires</a></li>
-					<li><a href="#">F.A.Q.</a></li>
-					<li><a href="#">Contact Me</a></li>
+					<li><a href="#feedback">Feedback</a></li>c
+					<li><a href="#gallery">Gallery</a></li>
+					<li><a href="#features">Features</a></li>
+					<li><a href="#faq">F.A.Q.</a></li>
+					<li><a href="#contactus">Contact us</a></li>
 				</ul>
 			</div>
 		</div> <!-- container -->
@@ -60,10 +57,9 @@
 		</div>
 	</div> <!--  end container -->
 </div> <!-- end jumbotron -->
-
-<div class="container">
+<div class="container" id="feedback">
 <section>
-	 <div class="page-header" id="feedback">
+	 <div class="page-header">
 		 <h2>Feedback.<small> Check out the awesome feedback</small></h2>
 	 </div>
 	 <!-- end feedback -->
@@ -96,26 +92,25 @@
 		<div class="container text-center">
 			<h3> Subscribe for more</h3>
 			<p> Enter your name & mail</p>
-			<form class="form-inline" action="index.html" method="post">
+			<form class="form-inline" action="server.php" method="POST">
 				<div class="form-group">
-					<label for="name">Name</label>
-					<input type="text" id="name" class="from-control" placeholder="Enter your name">
+					<label for="sb-name">Name</label>
+					<input name="sb-name" type="text" id="sb-name" class="form-control" placeholder="Enter your name" required>
 				</div>
-				&nbsp &nbsp
 				<div class="form-group">
-					<label for="email">Email address</label>
-					<input type="text" id="email" class="from-control" placeholder="Enter your email">
+					<label for="sb-email">Email address</label>
+					<input name="sb-email" type="text" id="sb-email" class="form-control" placeholder="Enter your email" required>
 				</div>
-				<button type="submit" name="subscribe">Subscribe</button>
+				<button type="submit" name="subscribe" class="btn btn-primary">Subscribe</button>
 			</form>
 		</div> <!-- end of container -->
 	</div> <!-- end of well -->
 </section> <!-- end of call to action -->
 
 <!-- Gallery -->
-<div class="container">
+<div class="container" id="gallery">
 <section id="gallery-carousel">
-	<div class="page-header" id="gallery">
+	<div class="page-header">
 		<h2>Gallery.<small> Check out the awesome Gallery</small></h2>
 	</div>
 
@@ -153,12 +148,12 @@
 	</div>  <!-- end of carousel -->
 	
 </section>
-</div>
-<!-- features -->
+</div> <!-- END OF GALLERY-->
 
-<div class="container">
+<!-- features -->
+<div class="container" id="features">
 <section>
-	<div class="page-header" id="features">
+	<div class="page-header" >
 		<h2>Features.<small> Some of the coolest Features of this app</small></h2>
 	</div>
 	<div class="row">
@@ -221,13 +216,14 @@
 		</div>
 	</div>
 </section>
-</div>
+</div> <!-- END OF features -->
 <!-- f.a.q -->
-<div class="container">
+<div class="container" id="faq">
 <section>
-<div class="page-header" id="faq">
+	<div class="page-header" >
 		<h2>F.A.Q <small>  Questions and Answers </small></h2>
 	</div>
+	<!-- panel one -->
 	<div class="panel-group" id="accordion">
 		<div class="pannel panel-default">
 			<div class="panel-heading">
@@ -236,23 +232,128 @@
 			</div>
 				<!--  End panel title -->
 		
-		<div id="collapse-1" class="pannel-collapse collapse">
+		<div id="collapse-1" class="pannel-collapse collapse in">
 			<div class="panel-body">
 				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor</p>
 			</div>
 			</div>
 		</div>
-
 		</div>
-
-
+	
+	<!-- panel two -->
+		<div class="pannel panel-default">
+			<div class="panel-heading">
+				<div class="panel-title">
+				<a href="#collapse-2" data-toggle="collapse" data-parent="#accordion">Question two?</a>	
+			</div>
+				<!--  End panel title -->
+		<div id="collapse-2" class="pannel-collapse collapse">
+			<div class="panel-body">
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor</p>
+			</div>
+			</div>
+		</div>
+		</div>
+	
+	<!-- panel tree -->
+	
+		<div class="pannel panel-default">
+			<div class="panel-heading">
+				<div class="panel-title">
+				<a href="#collapse-3" data-toggle="collapse" data-parent="#accordion">Question tree?</a>	
+			</div>
+				<!--  End panel title -->
+		<div id="collapse-3" class="pannel-collapse collapse">
+			<div class="panel-body">
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor</p>
+			</div>
+			</div>
+		</div>
+		</div>
 	</div>
-
-
-
 </section>
-</div>
+</div> <!-- END OF FAQ -->
 
+<!-- Contact us section -->
+<div class="container" id="contactus">
+<section>
+	<div class="page-header" >
+		<h2>Contact us <small> Send us your opinion </small></h2>
+	</div>
+	<div class="row">
+		<div class="col-lg-4">
+			<p><i>Message us or use the contact address</i></p>
+			<address>
+			<strong>Street 2078 Plainfield Avenue </strong> <br>
+			City Syracuse <br>
+			State Full New York <br>
+			Zip Code 13202 <br>
+			Phone Number 315-546-9953 <br>
+			</address>
+		</div>
+		<div class="col-lg-8">
+			<form action="#" class="form-horizontal">
+				<div class="form-group">
+					<label for="contact-name" class="col-lg-2 control-label">Name</label>
+					<div class="col-lg-10">
+						<input type="text" class="form-control" id="contact-name" placeholder="Enter your name">
+					</div>
+				</div> <!-- End form group -->
+
+				<div class="form-group">
+					<label for="email-us" class="col-lg-2 control-label">Email</label>
+					<div class="col-lg-10">
+						<input type="text" class="form-control" id="email-us" placeholder="Enter your email">
+					</div>
+				</div> <!-- End form group -->
+				<div class="form-group">
+					<label for="message-us" class="col-lg-2 control-label">Message</label>
+					<div class="col-lg-10">
+						<textarea class="form-control" name="message-us" id="message-us" cols="20" rows="5" placeholder="Enter your message"></textarea>
+					</div>
+				</div> 
+				<div class="form-group">
+					<div class="col-lg-10 col-lg-offset-2">
+						<button type="submit" class="btn btn-primary">Submit</button>
+					</div>
+				</div> <!-- End form group -->
+			</form>
+		</div>
+	</div>
+</section>
+
+</div>
+<!-- end of contact us -->
+
+<!-- Footer -->
+<footer>
+<div class="container text-center">
+			<h3> Subscribe for more</h3>
+			<p> Enter your name & mail</p>
+			<form class="form-inline" action="server.php" method="POST">
+				<div class="form-group">
+					<label for="sb-name">Name</label>
+					<input type="text" name="sb-name" id="sb-name" class="form-control" placeholder="Enter your name" required>
+				</div>
+				<div class="form-group">
+					<label for="sb-email">Email address</label>
+					<input type="text" name="sb-email" id="sb-email" class="form-control" placeholder="Enter your email" required>
+				</div>
+				<button type="submit" name="subscribe" class="btn btn-primary">Subscribe</button>
+			</form>
+			 
+			<hr>
+
+			<ul class="list-inline">
+				<li> <a href="http://facebook.com">Facebook</a></li>
+				<li> <a href="http://tweeter.com">Tweeter</a></li>
+				<li> <a href="http://youtube.com">Youtube</a></li>
+			</ul>
+			<p>
+				&copy Copyright D. Kovachev @ <?php echo date("Y"); ?></p>
+
+</div><!-- end of container -->
+</footer>
 
 
 <!-- jquery 2.4.1 -->
