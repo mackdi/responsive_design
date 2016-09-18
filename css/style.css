@@ -9,3 +9,7 @@ body {
   width: 800px;
   margin: auto;
 }
+.my-class {
+	color: #d2ff1f;
+	font-size: 3em;
+}
