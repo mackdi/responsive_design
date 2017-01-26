@@ -26,4 +26,3 @@
     </div>
   </form>
 </div>
-<!--<?php require "server.php";  ?>-->
