@@ -26,4 +26,4 @@
     </div>
   </form>
 </div>
-<?php require "server.php";  ?>
+<!--<?php require "server.php";  ?>-->
